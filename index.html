@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <head>
   <title>Railway Prediction</title>
-</head>
+
   <style>
-body {
-  background-color: red;
-}
-</style>
-  <link rel="stylesheet" href="style.css">
+    body {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+  </style>
+
+</head>
 <body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</div>
 
 <h1>🚆 Railway Delay Predictor</h1>
-  <style>
-body {
-  background-color: red;
-}
-</style>
 
-<label>Train Name:</label>
-<input type="text" id="train"><br><br>
+<img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/train-1869729_1280.jpg" width="300">
+
+<br><br>
+
+<label>Train Number:</label>
+<input type="text" id="trainNumber"><br><br>
 
 <label>Weather:</label>
 <select id="weather">
@@ -32,17 +30,6 @@ body {
   <option value="fog">Fog</option>
 </select><br><br>
 
-<label>Train Number:</label>
-<input type="text" id="trainNumber"><br><br>
-
-<label>From Station:</label>
-<input type="text" id="from"><br><br>
-
-<label>To Station:</label>
-<input type="text" id="to"><br><br>
-
-<label>Date:</label>
-<input type="date" id="date"><br><br>
 <button onclick="predict()">Predict</button>
 
 <h2 id="result"></h2>
