@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railway Prediction</title>
+</head>
+<body>
+
+<h1>🚆 Railway Delay Predictor</h1>
+
+<label>Train Name:</label>
+<input type="text" id="train"><br><br>
+
+<label>Weather:</label>
+<select id="weather">
+  <option value="clear">Clear</option>
+  <option value="rain">Rain</option>
+  <option value="fog">Fog</option>
+</select><br><br>
+
+<button onclick="predict()">Predict</button>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
