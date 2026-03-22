@@ -1,11 +1,80 @@
+/* 🌆 Background (Railway Theme) */
 body {
-  background-image: url('newtrain.jpg');
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b');
+
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-color: red;
+  color: white;
 }
 
+/* 🧊 Glass Card */
 .card {
-  border-radius: 15px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  padding: 25px;
+}
+
+/* 🧾 Title Styling */
+h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+/* 📝 Subtitle */
+p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+/* 🚆 Image Styling */
+img {
+  border-radius: 12px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/* 📥 Input Fields */
+input, select {
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 10px;
+}
+
+/* 🔘 Button Styling */
+.btn-custom {
+  background: linear-gradient(45deg, #ffcc00, #ff9900);
+  border: none;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s;
+}
+
+/* 🔥 Button Hover Effect */
+.btn-custom:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ffd633, #ffaa00);
+}
+
+/* 📊 Result Box */
+#result {
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 500px) {
+  .card {
+    width: 90% !important;
+    padding: 20px;
+  }
 }
