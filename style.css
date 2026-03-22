@@ -1,14 +1,16 @@
-/* 🌆 Background (Railway Theme) */
+/* 🌆 Background (Railway Theme FINAL FIX) */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1502877338535-766e1452684a');
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
 }
 
@@ -16,40 +18,43 @@ body {
 .card {
   border-radius: 20px;
   background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
   padding: 25px;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 8%;
 }
 
-/* 🧾 Title Styling */
+/* 🧾 Title */
 h2 {
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 5px;
 }
 
 /* 📝 Subtitle */
 p {
   font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 15px;
+  opacity: 0.85;
 }
 
-/* 🚆 Image Styling */
+/* 🚆 Image */
 img {
   border-radius: 12px;
   max-height: 150px;
   object-fit: cover;
+  width: 100%;
 }
 
-/* 📥 Input Fields */
+/* 📥 Inputs */
 input, select {
   border-radius: 10px !important;
   border: none !important;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
-/* 🔘 Button Styling */
+/* 🔘 Button */
 .btn-custom {
   background: linear-gradient(45deg, #ffcc00, #ff9900);
   border: none;
@@ -58,23 +63,24 @@ input, select {
   transition: 0.3s;
 }
 
-/* 🔥 Button Hover Effect */
+/* 🔥 Hover */
 .btn-custom:hover {
   transform: scale(1.05);
   background: linear-gradient(45deg, #ffd633, #ffaa00);
 }
 
-/* 📊 Result Box */
+/* 📊 Result */
 #result {
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
+  margin-top: 10px;
 }
 
-/* 📱 Mobile Responsive */
+/* 📱 Mobile */
 @media (max-width: 500px) {
   .card {
-    width: 90% !important;
-    padding: 20px;
+    width: 90%;
+    margin-top: 20%;
   }
 }
